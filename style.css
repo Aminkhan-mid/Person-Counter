@@ -1,0 +1,146 @@
+
+body{ 
+    background-color: aliceblue; /*body's color*/
+    text-align: center; /*h1 text center*/
+    font-family: helvetica; /*bodies font is helvetica*/
+}
+
+.container{
+    display: flex; /*activating flexbox, to align items vertically or horizantlly*/
+    flex-direction: row; /*flex-direction set to row,horizantly */
+    align-items: center; /*it center the items of the container*/
+    justify-content: space-around; /*adding space between the text and the image*/
+}
+
+.text-container{
+    background-color: #fd4326; /*text-containers background color*/
+    color: white; /*color text*/
+    padding: 35px;  /*adding padding to background to enlarge it*/
+    width: 50ex; /*width to the text container*/
+    height: 50ex; /*height to the text container*/
+    border-radius: 15px; /*smoothing the edges*/
+    margin-top: 20px; /*adding space at top*/
+    margin-bottom: 100px; /*adding space at bottom*/
+    display: flex; /*activating flexbox, to align items vertically or horizantlly*/
+    flex-direction: column; /*flex direction set to coloum, vertically*/
+    flex-direction: column; /*activating flexbox, to align items vertically or horizantlly*/
+    align-items: center; /*the text in this container set to center*/
+}
+.start{
+    font-size: 48px; /*text-containers heading font size increased*/
+    font-style: italic; /*style set to italic*/
+    color: white; /*text color set to white*/
+}
+#count-el{
+    margin-top: 10px; /*adding sapce top at 0*/
+    background-color: #002366; /*background color of 0*/
+    color: white;/*0 color set to white*/
+    padding: 10px 30px 10px 30px; /*10px of space top and bottom, 30ps left and right */
+    border-radius: 10px; /*softing the edge of 0 background*/
+}
+#save-el{
+    color: black; /*records text color*/
+    font-weight: 900;/*records font weight*/
+    font-size: 1.1em;/*records font size*/
+}
+
+#save-btn
+.button-group{
+    display: flex;/*the to buttons are set to flex*/
+    flex-direction: row;/*their direction is to be row which is horizontal*/
+    gap: 30px;/*some gap between the two buttons*/
+}
+button{
+    font-weight:bold; /*add and save button text set to bold*/
+    padding: 7px;/*space around the buttons*/
+    border-radius: 5px;/*softing the edges of the buttons*/
+}
+
+h1{
+    color: black; /*text color-black for h1*/
+    font-style: italic;/*h1 font style italic*/
+    text-decoration: underline;/*adding underline to h1*/
+}
+
+h2{
+    font-size: 60px;/*h2 font size 60*/
+}
+
+
+.photo{
+    margin-top: 40px;/*adding space towards the top of the image*/
+    border-radius: 15px;/*smoothing the edges of the images*/
+    height: 70vh;/*70% of the viewport height*/
+    width: 55vh;/*55% of the viewport height*/
+    margin-bottom: 5%;/*marging bottom set to 5%*/
+}
+
+
+/*Styling for the footer*/
+footer{
+    background-color:#ffa20c;/*background color of the footer*/
+    border-radius: 15px; /*softing the edges of the background color*/
+}
+
+.intro{
+    text-align: center; /*footers intro set to align*/
+    font-size: 30px;/*font size*/
+    font-weight: bold;/*font is bold*/
+}
+
+.footerContainer{ /*footer container holds intro and links*/
+    width: 100%; /*width set to 100%*/
+    padding: 10px;/*space around 10px*/
+}
+
+.footerNav ul{
+    display: flex;/*the links set to flex which automatically set them in row*/
+    justify-content: center;/*center the links*/
+    gap: 40px;/*adding gap between the the two links*/
+    list-style: none;/*removing the bullet points from the ul*/
+}
+
+.footerNav ul li a{
+    color:#551a8b;/*adding text color to the links*/
+    font-weight: 700;/*adding weight to the links*/
+    font-size: 1.3em;/*increaing the size of the links*/
+    opacity: 0.8;/*reducing the text opacity*/
+    text-decoration: none;/*removing the underline*/
+    transition: all 0.5s ease;
+     /*"transition" when going into hover, "all" means everything all the propertities are going into transition, the "transition time" or duration will take "0.5" (half a second) to go into hover, "ease" allows to control the speed of the transition, ease means the transition will start slow, then speeds up and then slows down again*/
+}
+
+.footerNav ul li a:hover{/*adding hover to the links and styling them when hovered*/
+    color: black;/*text color when hovered*/
+    font-weight: bold;/*making the text bold when hovered*/
+    background-color: #fd4326;/*background color when hovered*/
+    border-radius: 5px;/*softing the edge when hovered*/
+    padding: 3px;/*adding space around when hovered*/
+
+    transform: scale(1.1);
+    /*"transform" means adding 2d or 3d transformations to an element like rotating, scaling, translating(moving), or skewing, "scale" is used to add scaling transformation either tranforming big or small, and at last "(1.1)" is a sacling factor, a scaling factor of 1 means the element stats at its original size, and any number hight or lower than 1 either increases or decresases the size, in short this line of code is writte to add a smoot and interactive feeling*/
+
+    box-shadow:0 8px 15px rgba(253, 67, 38, 0.9);
+    /*"box-shadow" is used to add a shadow around the element, "0" is horizontal offset this determenis weather the shadow goes left or right but since its set to 0 it in center, "8px" is vertically offset this determines weather the shadow goes up or down but here its set to 8px which moves down a bit, "15px" this is blur radius, this controls the edges and blurness of the shadow, a larger value makes the shadow softer and more diffuesed but here its 15px which indicates a fairly soft shadow*/
+
+    text-decoration:underline;/*when hovered text appears with an underline*/
+    text-decoration-thickness: 2.5px; /*underline thickness increased*/
+    text-decoration-color: black;/*underlin color is black*/
+}
+/*styling for the copyright line*/
+.footerBottom {
+    background-color: black;/*background color*/
+    color: #ffa20c;/*text color*/
+    padding: 20px;/*space around the text*/
+    text-align: center;/*text set to center*/
+    border-radius: 3px;/*softing the edge of the bottom*/
+}
+
+.designer{/*Amin Khan text styling*/
+    text-transform: uppercase;/*text turned into uppercase*/
+    letter-spacing: 1px;/*adding space between letters*/
+    font-weight: 700;/*add weight to the text*/
+    margin-left: 5px;/*marging left is 5px*/
+    opacity: 0.8;/*reducing the opacity of the text*/
+}
+

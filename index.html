@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--First heading-->
+    <h1>Count Them Away!</h1>
+    <!--A div called conatiner to display row in flex-direction-->
+    <div class="container">
+        <!--A div called text-container to display the text in coloum in flex-direction-->
+        <div class="text-container">
+            <!--P tag for Second heading with class "start" for styling-->
+            <p class="start">Start Counting</p>
+            <!--h2 tag to display the changing numbers when counting, with an id called "coun-el" which is used to connect the add them button in JS-->
+    <h2 id="count-el">0</h2>
+
+
+    <!--A div called button-group to make them display in row in flex-direction-->
+    <div class="button-group">
+
+        <!--1st button called ADD THEM, with an id of "add-btn" and an onclick="add()" to make the button work in JS to add numbers-->
+    <button id="add-btn" onclick="add()">ADD THEM</button>
+
+    <!--2nd button called SAVE THEM, with an id of "save-btn" and an onclick="save()" to make the button work in JS to save what is added-->
+    <button id="save-btn" onclick="save()">SAVE THEM</button>
+    </div>
+    
+    <!--P tag to save all the Records of added numbers with an id "save-el"-->
+    <p id="save-el">RECORDS: </p>
+        </div>
+    
+    <!--An image for viusal aesthetic-->
+    <img class="photo" src="https://i.pinimg.com/736x/a2/9b/c0/a29bc0820717fb51cebdc1d1fb847d7a.jpg"BLOCK">
+
+</div>
+
+    
+    <!--footer tag to add extras-->
+    <footer>
+
+        <!--A div called footerContainer to store the intro and the external links-->
+        <div class="footerContainer">
+
+            <!--P tag for the heading with a class "intro" for styling purposes-->
+            <p class="intro">Know more about me!</p>
+
+            <!--A div called footerNav to store and style the external links-->
+        <div class="footerNav">
+            <!--ul tag for unordered list or bullet point list-->
+            <ul>
+                <!--li tag for listing things used both in ul and ol, and a tag for linking the external links-->
+                <li><a href="">Contact Me</a></li>
+                <li><a href="https://www.creativeboom.com/inspiration/quirky-illustrations-by-stephen-maurice-graham-show-a-unique-talent/" target="_blank">Joker Image</a></li>
+            </ul>
+        </div>
+    </div>
+
+         <!--A div called footerBottom to store Copyrights and for styling-->
+        <div class="footerBottom">
+            
+                    <!--&copy; is used to add copyright symbol-->
+
+                Copyrights &copy;2024; Designed by 
+                <!--span tag to add my name and to style the text with class"designer"-->
+                <span class="designer">Amin Khan</span>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
